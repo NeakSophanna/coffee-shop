@@ -17,8 +17,7 @@ public class MyTelegramBot {
 	private String token;
 	@Value("${chat_id}")
 	private long chat_id;
-	
-	@Autowired
+
 	private TelegramBot bot;
 	
 	public SendResponse message(String text) {
