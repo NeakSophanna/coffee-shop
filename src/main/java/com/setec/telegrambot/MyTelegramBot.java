@@ -1,5 +1,6 @@
 package com.setec.telegrambot;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,7 @@ public class MyTelegramBot {
 	@Value("${chat_id}")
 	private long chat_id;
 	
+	@Autowired
 	private TelegramBot bot;
 	
 	public SendResponse message(String text) {
